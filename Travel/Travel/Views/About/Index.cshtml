@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<!doctype html>
+<html lang="zxx">
+
+<body>
+    <!--header-->
+    <!-- //header -->
+    <!-- about breadcrumb -->
+    @await Component.InvokeAsync("HeadPartial")
+    <!-- //about breadcrumb -->
+    <!-- /about-6-->
+    @await Component.InvokeAsync("AboutPartial")
+    <!-- //about-6-->
+    <!-- /content-6-->
+    @await Component.InvokeAsync("ChoosePartial")
+    <!-- //content-6-->
+   @await Component.InvokeAsync("DetailPartial")
+    <!-- stats -->
+    @await Component.InvokeAsync("AboutInfoBarPartial")
+    <!-- //stats -->
+    <!-- team -->
+     @await Component.InvokeAsync("GuidePartial")
+  
+
+</body>
+
+</html>

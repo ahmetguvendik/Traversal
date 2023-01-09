@@ -1,0 +1,24 @@
+﻿@using EntityLayer.Concrete
+@model List<About>
+
+<section class="w3l-cta4 py-5">
+    <div class="container py-lg-5">
+        @foreach(var item  in Model)
+        {
+      <div class="ab-section text-center">
+                <h6 class="sub-title">Hakkımızda</h6>
+                <h3 class="hny-title">@item.Title</h3>
+                <p class="py-3 mb-3">
+                   @item.SubTitle
+                </p>
+                <a href="services.html" class="btn btn-style btn-primary">Daha Fazlası</a>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-9 mx-auto">
+                    <img src=@item.Image class="img-fluid" alt="">
+                </div>
+            </div>
+
+        }
+    </div>
+</section>
